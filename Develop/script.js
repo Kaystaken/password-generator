@@ -11,7 +11,10 @@ function writePassword() {
 
  // floor takes off a decimal point and fractional, leaving you with a whole number 
 function generatePassword() {
-  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var upperCaseCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  var lowerCaseCharacters = 'abcdefghijklmnopqrstuvwxyz';
+  var numericCharacters = '0123456789';
+  var specialCharacters = '!#$%&()*+,-./:;<=>?@[\]^_{|}~';
   var valid = false;
   var length = "";
 
@@ -27,6 +30,7 @@ function generatePassword() {
     }
   }
 
+  var characters = upperCaseCharacters + lowerCaseCharacters + numericCharacters + specialCharacters;
   var password = "";
   //++ increase by 1 "increment operator"
   for (var count = 0; count < length; count++) {
