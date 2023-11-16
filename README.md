@@ -4,19 +4,19 @@
 
 ### Motivation
 
-An employee with access to sensitive data needed a randomly generated password
+An employee with access to sensitive data needed a randomly generated password.
 
 ### Why?
 
-Allows you to pick the criteria you'd like to include for extra security and to meet requirements of various sites
+Allows you to pick the criteria you'd like to include for extra security and to meet requirements of various sites.
 
 ### Problem Solved
 
-Now they can create a strong password that provides greater security
+Now they can create a strong password that provides greater security.
 
 ### Learnings
 
-I learned some basics of JavaScript. The var is the keyword that tells JavaScript you're declaring a variable. Semicolons are used to seperate or end statements. Prompt instructs the browser to display my message prompting the user to input some text and confirm is used to diplay a question to confirm with user. ParseInt has its own return and is its own function.
+I learned some basics of JavaScript. The var is the keyword that tells JavaScript you're declaring a variable. Semicolons are used to seperate or end statements. Prompt instructs the browser to display my message prompting the user to input some text and confirm is used to display a question to confirm with user. ParseInt has its own return and is its own function.
 
 ## Installation
 
