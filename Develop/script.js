@@ -9,18 +9,20 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// floor takes off a decimal point and fractional, leaving you with a whole number 
+ // floor takes off a decimal point and fractional, leaving you with a whole number 
 function generatePassword() {
   var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   var valid = false;
   var length = "";
 
   while (!valid) {
+    //prompt instructs the browser to display my message prompting the user to input some text
     length = prompt("How long do you want your password?");
-    length = parseInt(length, 10);
     //parseInt has its own return and is its own function
+    length = parseInt(length, 10);
     valid = !(length <= 8 || length >= 128 || Number.isNaN(length));
     if (!valid) {
+      //length chosen to meet acceptance critera
       alert("Please choose a length of at least 8 characters and no more than 128 characters");
     }
   }
