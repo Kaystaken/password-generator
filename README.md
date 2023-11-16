@@ -16,6 +16,7 @@ Now they can create a strong password that provides greater security
 
 ### Learnings
 
+I learned some basics of JavaScript. The var is the keyword that tells JavaScript you're declaring a variable. Semicolons are used to seperate or end statements.
 
 
 ## Installation
