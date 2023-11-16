@@ -9,7 +9,6 @@ function writePassword() {
   passwordText.value = password;
 }
 
- // floor takes off a decimal point and fractional, leaving you with a whole number 
 function generatePassword() {
   var upperCaseCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   var lowerCaseCharacters = 'abcdefghijklmnopqrstuvwxyz';
@@ -30,10 +29,16 @@ function generatePassword() {
     }
   }
 
+  var includeLowerCase = confirm("Would you like to include lowercase characters?");
+  var includeUppererCase = confirm("Would you like to include uppercase characters?");
+  var includeNumeric = confirm("Would you like to include numeric characters?");
+  var includeSpecial = confirm("Would you like to include special characters?");
+
   var characters = upperCaseCharacters + lowerCaseCharacters + numericCharacters + specialCharacters;
   var password = "";
   //++ increase by 1 "increment operator"
   for (var count = 0; count < length; count++) {
+    // floor takes off a decimal point and fractional, leaving you with a whole number 
     var character = characters.charAt(Math.floor(Math.random() * characters.length));
     password += character;
   }
